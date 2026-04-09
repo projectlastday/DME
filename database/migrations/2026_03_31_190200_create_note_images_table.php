@@ -1,0 +1,37 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('note_images', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('note_id')->constrained('notes')->cascadeOnDelete();
+            $table->string('disk');
+            $table->string('path');
+            $table->string('original_filename');
+            $table->string('mime_type');
+            $table->unsignedBigInteger('size_bytes');
+            $table->unsignedTinyInteger('sort_order');
+            $table->timestamps();
+
+            $table->index('note_id');
+            $table->index(['note_id', 'sort_order']);
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('note_images');
+    }
+};

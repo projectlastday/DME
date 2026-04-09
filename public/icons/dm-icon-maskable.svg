@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Diana's Mandarin maskable icon">
+  <defs>
+    <radialGradient id="dm-mask-bg" cx="35%" cy="25%" r="90%">
+      <stop offset="0%" stop-color="#fff3c4"/>
+      <stop offset="100%" stop-color="#d78d17"/>
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" fill="#f4b942"/>
+  <circle cx="256" cy="256" r="196" fill="url(#dm-mask-bg)"/>
+  <circle cx="256" cy="202" r="84" fill="#fff7df"/>
+  <path d="M164 348c24-44 56-66 92-66 36 0 68 22 92 66" fill="none" stroke="#4e3913" stroke-width="30" stroke-linecap="round"/>
+  <path d="M178 382h156" fill="none" stroke="#4e3913" stroke-width="30" stroke-linecap="round"/>
+  <path d="M202 166c16-22 34-34 54-34 20 0 38 12 54 34" fill="none" stroke="#4e3913" stroke-width="24" stroke-linecap="round"/>
+</svg>
